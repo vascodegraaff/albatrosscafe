@@ -1,0 +1,51 @@
+.about-img {
+  background-image: url("../resources/img/home-info.jpg");
+  background-size: cover;
+  width: 65%;
+  background-position: center center;
+}
+
+@media (max-width: 1024px) {
+  .about-img {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  div.hero-info.title {
+    text-align: center;
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+#home-hero {
+  background-image: url("../resources/img/Hero-img-blur.jpg");
+}
+
+.hero-image {
+  /* Set a specific height */
+  width: 100% !important;
+  
+  overflow: hidden;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-body {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  @media(min-width: 1024px) {
+    .hero-body {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 678px) {
+  .hero-logo{
+    display: none;
+  }
+}

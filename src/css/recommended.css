@@ -1,0 +1,115 @@
+.menu-item-lg {
+  padding: 0px !important;
+  flex-direction: column;
+  width: auto !important;
+  margin-bottom: .4rem;
+  justify-content: center;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+.menu-item-sm {
+  display: flex !important;
+  flex-direction: column;
+  width: auto !important;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgba(10, 10, 10, 0.1);
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  color: #4a4a4a;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.menu-item-md {
+  padding: 0px !important;
+  flex-direction: column;
+  width: auto !important;
+  margin-bottom: .4rem;
+  justify-content: center;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+/* new media queries from small to big*/
+.item-img {
+  height: 150px ;
+  width: 100% ;
+  object-fit: cover;
+}
+.old-menu-item {
+  width: 40%;
+}
+.menu-container :nth-child(n+3) {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .item-img {
+    object-fit: cover;
+    height: 220px;
+    width: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .old-menu-item {
+    display: flex;
+    padding: 0px !important;
+    flex-direction: column;
+    flex: 0 0 auto;
+  }
+  .menu-container {
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media(min-width: 767) {
+  .recommend-section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.item-title {
+  padding-top: .4rem;
+  margin-bottom: 0px !important;
+}
+.item-tag {
+  margin-top: 1rem !important;
+  border-width: 0;
+  color: #3bcf75;
+  font-family: BentonSans,Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
+
+div .item-details {
+  border-width: 0;
+  height: 74px;
+  margin: 0;
+  outline: 0;
+  padding: 0 16px 16px;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.recommend-section{
+  padding: 1.5rem 1rem;
+}
