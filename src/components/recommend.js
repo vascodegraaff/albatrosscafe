@@ -41,7 +41,7 @@ class Recommended extends Component {
     return this.props.menu.map(item => {
       return (
         <div className={recommendedCss}>
-          <img className="item-img" src={item.image} />
+          <img className="item-img" src={item.image} alt={item.image} />
           <div className="item-details">
             <div className="item-title title is-6">{item.name}</div>
             <div className="item-tag">{item.categories}</div>
@@ -85,7 +85,7 @@ class Recommended extends Component {
           </div>
         ) : (
           <div className="flex flex-row">
-            <a className="flex align-center" onClick={this.previous}>
+            <div className="flex align-center" onClick={this.previous}>
               <svg
                 style={{
                   width: '50px',
@@ -99,7 +99,7 @@ class Recommended extends Component {
                   d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
                 />
               </svg>
-            </a>
+            </div>
             <Slider
               ref={c => (this.slider = c)}
               {...settings}
@@ -107,14 +107,14 @@ class Recommended extends Component {
             >
               {this.recommendedData()}
             </Slider>
-            <a className="flex align-center" onClick={this.next}>
+            <div className="flex align-center" onClick={this.next}>
               <svg style={{ width: '50', height: '50px' }} viewBox="0 0 24 24">
                 <path
                   fill="#000000"
                   d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
                 />
               </svg>
-            </a>
+            </div>
           </div>
         )}
       </div>

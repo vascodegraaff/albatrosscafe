@@ -43,6 +43,7 @@ class About extends Component {
         </section>
         <section>
           <iframe
+            title="aboutMap"
             src="https://snazzymaps.com/embed/121975"
             width="100%"
             height="400px"
