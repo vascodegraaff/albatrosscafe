@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../components/navbar';
 import Recommended from '../components/recommend';
-import Reviews from '../components/reviews';
+/* import Reviews from '../components/reviews'; */
 import { Link } from 'react-router-dom';
 
 class Home extends Component {

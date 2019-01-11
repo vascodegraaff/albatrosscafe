@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/navbar';
-import MenuCard from '../components/menucard.js';
+/* import MenuCard from '../components/menucard.js'; */
 
 export default class Menu extends Component {
   render() {
